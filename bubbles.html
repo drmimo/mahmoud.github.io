@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bubbles</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="bubbles.css">
+</head>
+<body>
+
+<div class="bubbles">
+	
+</div>
+
+<script type="text/javascript">
+	
+	function randomNumber(limit){
+		return Math.floor(Math.random() * limit)
+	}
+
+
+	function generateBubbles(){
+
+		var randomCount = Math.floor(Math.random() * 80);
+		var randomSize, randomPosition, randomSpeed, randomDelay;
+
+		for (var i = 0; i <= randomCount; i++) {
+			
+			var bubble = document.createElement('div')
+			
+			//randomDelay = randomNumber(3)
+			
+				bubble.classList.add('bubble')
+			
+			
+			//alert(randomDelay)
+
+			randomSize = randomNumber(20)
+
+			bubble.style.height = randomSize+"px"
+			bubble.style.width = randomSize+"px"
+
+			randomPosition = randomNumber(window.innerWidth)
+			bubble.style.left = randomPosition+"px"
+
+			randomSpeed = 3 + randomNumber(10)
+			bubble.style.animationDuration = randomSpeed+"s"
+
+			document.querySelector('.bubbles').appendChild(bubble);
+
+		}
+
+	}
+
+	generateBubbles();
+
+</script>
+</body>
+</html>
