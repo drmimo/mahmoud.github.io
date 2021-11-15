@@ -1,1 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+body{
+    display: flex;
+}
+
+div.side{
+    width: 80pt;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.side a{
+    text-decoration: none;
+    color: white;
+}
+
+.side .logo{
+    width: 100%;
+    height: 80pt;
+    line-height: 80pt;
+    font-size: 35px;
+    text-align: center;
+    background-color: purple;
+}
+
+.side nav{
+    /*border: 1px solid white;*/
+
+}
+
+.side .nav_bar li{
+    text-align: center;
+    margin: 15px 0px;
+}
+.side .nav_bar li i, .scrollBtn i{
+    /*border: 1px solid red;*/
+    font-size: 30px;
+}
+
+.scrollBtn{
+    text-align: center;
+}
+
+main{
+    min-height: 100vh;
+    width: calc(100% - 80pt);
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+#about > *{
+    margin: 0 50px;
+}
+
+#about img{
+    width: 220pt;
+    height: 220pt;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 180pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description .social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.social a:not(:first-child){
+    text-decoration: none;
+    color: blueviolet;
+    margin: 0 15px;
+}
+
+.social a button{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social li{
+    /*border: 1px solid black;*/
+}
+
+.social i{
+    font-size: 30px;
+}
+
+.description h1, .description h3{
+    color: #333;
+}
+
+.description span{
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.description p{
+    color: gray;
+}
